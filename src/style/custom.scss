@@ -1,0 +1,120 @@
+@import "buefy";
+
+$background-color: #f5f5f5;
+$main-color: #00d1b2;
+
+.text-center {
+  text-align: center;
+}
+
+/****************************
+ *          LOGIN           *
+ ***************************/
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.login-form {
+  flex-grow: 1;
+  max-width: 550px;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.loginRegTabs a{
+  border-bottom: none;
+}
+
+.loginRegTabs li.is-active a{
+  border-bottom: 2px solid $main-color;
+  font-weight: 500;
+}
+
+/****************************
+ *          NAVBAR          *
+ ***************************/
+.main-navbar {
+  background-color: $background-color;
+}
+
+a.navbar-item:hover {
+  background-color: transparent;
+  color: $main-color;
+}
+a.navbar-item.is-active {
+  background-color: transparent;
+  color: $main-color;
+}
+
+#userIcon {
+  margin-right: 10px;
+}
+
+#username {
+  margin-right: 50px;
+}
+
+/****************************
+ *        DASHBOARD         *
+ ***************************/
+
+/*****AccountTabsBox*****/
+.accountInfoTabs .tabs a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.accountInfoTabs .tabs a:hover {
+  border-bottom: 1px solid $main-color;
+}
+
+.accountInfoTabs li.is-active a{
+  border-bottom: 1px solid $main-color;
+  font-weight: 500;
+  color: $main-color;
+}
+
+.pagination-previous:hover, .pagination-next:hover, .pagination-link:hover {
+  border-color: $main-color;
+  background-color: $main-color;
+  color: #fff;
+}
+
+.pagination-link.is-current {
+  background-color: $main-color;
+  border-color: $main-color;
+  color: #fff;
+}
+
+/*****AddAccountBox*****/
+
+.labelLeft .field-label{
+  text-align: left;
+  margin-right: 0.5rem;
+}
+
+/*****AccountInfoBox*****/
+.accountBox {
+  min-height: 202px;
+}
+
+.accountInfo p{
+  color: #363636;
+  font-size: 0.75rem;
+}
+
+.no-padding-top .field-label.is-small {
+  padding-top: 0;
+}
+
+/*****AddPaymentBox*****/
+.currencySelect .select.is-small {
+  padding-left: 36px;
+}
+
+
+
